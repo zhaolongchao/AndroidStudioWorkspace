@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--频道项拖拽-->
+    <item android:state_pressed="true"
+        android:state_selected="true">
+        <shape>
+            <stroke android:color="#f00"
+                android:width="0.8dp">
+            </stroke>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+    <!--频道项不可见的时候-->
+    <item android:state_enabled="false"
+        android:state_selected="true">
+        <shape>
+            <!--android:dashGap锯齿线
+            android:dashWidth锯齿线每段的长度-->
+            <stroke android:color="#ababab"
+                android:width="1dp"
+                android:dashGap="3dp"
+                android:dashWidth="7dp">
+            </stroke>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+    <!--频道项禁用-->
+    <item android:state_enabled="false">
+        <shape>
+            <!--勾边-->
+            <stroke android:color="#ababab"
+                    android:width="0.8dp">
+            </stroke>
+            <corners android:radius="5dp"></corners>
+            <solid android:color="#9000"></solid>
+        </shape>
+    </item>
+    <!--频道项按下-->
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="5dp"></corners>
+            <solid android:color="#8000"></solid>
+        </shape>
+    </item>
+    <!--频道项正常-->
+    <item >
+        <shape>
+            <!--勾边-->
+            <stroke android:color="#ababab"
+                    android:width="0.8dp">
+            </stroke>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+
+</selector>

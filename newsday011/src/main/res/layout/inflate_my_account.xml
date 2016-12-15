@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_biao_ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置您的靓照"
+        android:background="#7f00"
+        android:textSize="30sp"
+        android:padding="10dp"
+        style="@style/Base.TextAppearance.AppCompat.Menu"
+        android:gravity="center"/>
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv_biao_ti"
+        android:background="#00f"/>
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用相机拍照"
+        android:drawableLeft="@mipmap/photo_take"
+        android:background="#7f00"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:drawablePadding="20dp"
+        android:layout_below="@id/tv_biao_ti" />
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv_camera"
+        android:background="#00f"/>
+    <TextView
+        android:id="@+id/tv_pictures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从照片库中选择"
+        android:drawableLeft="@mipmap/photo_sel"
+        android:background="#7f00"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:drawablePadding="20dp"
+        android:layout_below="@id/tv_camera" />
+</RelativeLayout>

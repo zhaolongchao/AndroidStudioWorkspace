@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate
+    android:duration="2000"
+    android:toYDelta="100%"
+    android:fromYDelta="0%"
+    android:toXDelta="50%p"
+    android:fromXDelta="0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- android:fromXDelta="-100%" x轴动画开始的位置
+    android:toXDelta="-100%" x轴动画结束的位置
+    android:fromYDelta="100%" y轴动画开始的位置
+    android:toYDelta="100%" y轴动画结束的位置 取值为百分比，
+    例如：100%表示取值为控件自身宽度或高度的100%
+    计算动画开始或结束的位置 100%p 取值为父控件的宽度或高度的100%
+    计算动画开始或结束的位置 坐标中的0表示控件本身左上角的位置，
+    为x，y轴的0,0点 水平向右x增加，垂直向下y增加 -->
+</translate>

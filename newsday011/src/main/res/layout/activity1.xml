@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/art"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:id="@+id/iv_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bag"
+        android:layout_marginRight="40dp"
+        android:layout_alignTop="@+id/iv_art"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/book"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/iv_art"
+        android:layout_marginBottom="40dp" />
+
+    <ImageView
+        android:id="@+id/iv_fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/fashion"
+        android:layout_alignBottom="@+id/iv_book"
+        android:layout_alignRight="@+id/iv_bag" />
+
+</RelativeLayout>

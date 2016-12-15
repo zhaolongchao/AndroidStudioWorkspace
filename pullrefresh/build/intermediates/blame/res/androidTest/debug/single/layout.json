@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\zlc\\mystudio\\AndroidStudioWorkspace\\pullrefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\zlc\\mystudio\\AndroidStudioWorkspace\\pullrefresh\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "D:\\zlc\\mystudio\\AndroidStudioWorkspace\\pullrefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\zlc\\mystudio\\AndroidStudioWorkspace\\pullrefresh\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    }
+]

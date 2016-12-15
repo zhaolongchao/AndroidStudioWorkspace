@@ -1,0 +1,2 @@
+include ':app', ':newsday01', ':newsasynctask', ':newswebview', ':newsday011', ':newsfragment', ':newshorizontalscrollview', ':newsslidingmenu', ':library', ':newsgridview', ':wtest1121', ':newslocation', ':newsrefresh', ':testxutils', ':share', ':testmap', ':appmap'
+include ':pullrefresh'

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="70dp"
+    android:layout_height="40dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_channel_item"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="推荐"
+        android:textSize="22sp"
+        android:padding="7dp"
+        android:gravity="center"
+        android:background="@drawable/tv_channel_bg" />
+</LinearLayout>

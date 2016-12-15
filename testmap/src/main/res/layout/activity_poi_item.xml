@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0">
+    <TextView
+        android:id="@+id/tv_poi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兴趣点"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换"
+        android:textSize="25sp"
+        android:background="@drawable/view_bg"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"/>
+    <ListView
+        android:id="@+id/lv_poi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_poi_name"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible">
+
+    </ListView>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mv_poi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_poi_name"
+        android:layout_marginTop="10dp">
+
+    </com.amap.api.maps.MapView>
+
+</RelativeLayout>

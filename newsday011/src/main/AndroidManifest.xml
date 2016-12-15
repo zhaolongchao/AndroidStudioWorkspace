@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhuoxin.newsday01">
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--注册联网权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <!--谷歌google定位权限-->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <application
+        android:name="com.zhuoxin.NewsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/long2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--android:screenOrientation="landscape"   设置屏幕横屏或者竖屏
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        控制activity横竖屏切换的时候的生命周期
+        通过设置成orientation|keyboardHidden|screenSize属性，
+        可以控制activity生命周期只执行一次
+        -->
+        <!--引导页-->
+        <activity android:name=".StartPageActivity"
+                android:icon="@drawable/long2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--主界面-->
+        <activity android:name=".NewsHSVActivity"></activity>
+        <!--网页浏览器-->
+        <activity android:name=".ActivityWebView"></activity>
+        <!--频道管理-->
+        <activity android:name=".ChannelActivity"></activity>
+        <!--用户登录-->
+        <activity android:name=".LoginActivity"></activity>
+        <!--用户注册-->
+        <activity android:name=".RegisterActivity"></activity>
+        <!--logo界面-->
+        <activity android:name=".LogoActivity"></activity>
+        <!--我的账户界面-->
+        <activity android:name=".MyAccountActivity"></activity>
+        <!--收藏界面-->
+        <activity android:name=".FavoriteActivity"></activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--微信分享回调 -->
+        <activity
+            android:name="com.zhuoxin.share.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
